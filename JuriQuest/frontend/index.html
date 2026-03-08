@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JuriQuest - Cruzadinhas de Direito</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>JuriQuest</h1>
+        <div class="settings">
+            <label for="subject">Escolha a matéria:</label>
+            <select id="subject">
+                <option value="direito-civil">Direito Civil</option>
+                <option value="direito-penal">Direito Penal</option>
+                <option value="direito-constitucional">Direito Constitucional</option>
+                <option value="direito-do-trabalho">Direito do Trabalho</option>
+                <option value="direito-tributario">Direito Tributário</option>
+            </select>
+            <button id="generate-btn">Gerar Cruzadinha</button>
+        </div>
+        <div id="crossword-container">
+            <div id="grid-container"></div>
+            <div id="clues-container">
+                <div id="across-clues">
+                    <h2>Horizontais</h2>
+                    <ul id="across-clues-list"></ul>
+                </div>
+                <div id="down-clues">
+                    <h2>Verticais</h2>
+                    <ul id="down-clues-list"></ul>
+                </div>
+            </div>
+        </div>
+        <div id="loading" class="hidden">Carregando...</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

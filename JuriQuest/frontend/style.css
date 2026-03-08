@@ -1,0 +1,100 @@
+body {
+    font-family: sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 800px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.settings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#subject {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+#generate-btn {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#generate-btn:hover {
+    background-color: #0056b3;
+}
+
+#crossword-container {
+    display: flex;
+    gap: 20px;
+}
+
+#grid-container {
+    display: grid;
+    border: 2px solid #333;
+}
+
+#grid-container .cell {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ccc;
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+#grid-container .cell .number {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    font-size: 10px;
+    color: #666;
+}
+
+#grid-container .cell input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    background-color: transparent;
+}
+
+#grid-container .cell.empty {
+    background-color: #333;
+}
+
+#clues-container {
+    flex-grow: 1;
+}
+
+.hidden {
+    display: none;
+}
